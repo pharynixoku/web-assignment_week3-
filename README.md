@@ -8,7 +8,7 @@ I improved the Budget Tracker created in the previous weeks by adding a consiste
 
 ## Features
 
-- Personal Budget Tracker heading
+- OKUU CYBER Budget Tracker heading
 - Add Expense form
 - Expense category dropdown
 - Expense table with sample records
@@ -110,4 +110,4 @@ In this assignment, I learned how to improve the visual appearance of a webpage 
 
 **Simon Ohure**
 
-Personal Budget Tracker – PLP Week 3 Assignment
+OKUU CYBER Budget Tracker – PLP Week 3 Assignment
