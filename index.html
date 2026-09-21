@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OKUU CYBER Budget Tracking </title>
+
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <header>
+        <img src="logo1.jpg" alt="Budget Tracker Logo" width="80">
+
+        <h1>OKUU CYBER Budget Tracker</h1>
+        <p>Track your expenses and manage your money wisely.</p>
+    </header>
+
+    <!-- Add Expense Section -->
+    <section class="add-expense-section">
+        <h2>Add Expense</h2>
+
+        <form>
+
+            <label for="expense-name">Expense Name:</label>
+            <input
+                type="text"
+                id="expense-name"
+                name="expense-name"
+                placeholder="Enter expense name" 
+            ><br><br>
+
+            <label for="expense-amount">Amount:</label>
+            <input
+                type="number"
+                id="expense-amount"
+                name="expense-amount"
+                placeholder="Enter amount"
+            ><br><br>
+
+            <label for="expense-category">Category:</label>
+            <select id="expense-category" name="expense-category">
+                <option value="food">Food</option>
+                <option value="transport">Transport</option>
+                <option value="rent">Rent</option>
+                <option value="entertainment">Entertainment</option>
+                <option value="other">Other</option>
+            </select> <br><br>
+
+            <label for="expense-date">Date:</label>
+            <input
+                type="date"
+                id="expense-date"
+                name="expense-date"
+            ><br><br>
+
+            <button type="button">Add Expense</button>
+
+        </form>
+    </section>
+
+    <!-- Expenses Section -->
+    <section class="expenses-section">
+
+        <h2>My Expenses</h2>
+
+        <table>
+
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Amount</th>
+                    <th>Category</th>
+                    <th>Date</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>Lunch</td>
+                    <td>KES 250</td>
+                    <td>Food</td>
+                    <td>2026-08-17</td>
+                </tr>
+
+                <tr>
+                    <td>Bus Fare</td>
+                    <td>KES 100</td>
+                    <td>Transport</td>
+                    <td>2026-08-18</td>
+                </tr>
+
+                <tr>
+                    <td>House Rent</td>
+                    <td>KES 8,000</td>
+                    <td>Rent</td>
+                    <td>2026-08-19</td>
+                </tr>
+
+                <tr>
+                    <td>Football</td>
+                    <td>KES 500</td>
+                    <td>Entertainment</td>
+                    <td>2026-08-20</td>
+                </tr>
+
+                <tr>
+                    <td>Stationery</td>
+                    <td>KES 300</td>
+                    <td>Other</td>
+                    <td>2026-08-21</td>
+                </tr>
+            </tbody>
+
+        </table>
+
+    </section>
+
+    <!-- How to Use Section -->
+    <section class="help-section">
+
+        <details>
+            <summary>How to use this tracker</summary>
+
+            <p>
+                Enter the name of your expense, the amount, select a category,
+                and choose the date. Click the Add Expense button to submit
+                the information. JavaScript functionality will be added in a
+                later week.
+            </p>
+
+        </details>
+
+    </section>
+
+    <!-- YouTube Video -->
+    <section class="video-section">
+
+        <h2>Budgeting Tips</h2>
+
+        <iframe
+    width="560"
+    height="315"
+    src="https://www.youtube.com/embed/pKpdibyljR4"
+    title="Budgeting Tips Video"
+    frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowfullscreen>
+</iframe>
+
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Personal Budget Tracker</p>
+    </footer>
+
+
+</body>
+</html>

@@ -1,0 +1,460 @@
+/* General page styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f8;
+    margin: 0;
+    padding: 20px;
+    color: #333;
+}
+
+/* Header */
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+header img {
+    display: block;
+    margin: 0 auto 10px;
+}
+
+h1 {
+    margin-bottom: 5px;
+}
+
+/* Sections */
+.add-expense-section,
+.expenses-section,
+.help-section,
+.video-section {
+    background-color: white;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 900px;
+    border-radius: 8px;
+}
+
+/* Form */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* Direct child selector */
+.add-expense-section > h2 {
+    margin-top: 0;
+}
+
+/* Inputs */
+input,
+select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Focus pseudo-class */
+input:focus,
+select:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+/* Negation pseudo-class */
+input:not([type="date"]) {
+    background-color: #fafafa;
+}
+
+/* Button */
+button {
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+/* Button hover */
+button:hover {
+    opacity: 0.85;
+}
+
+/* Expense table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+/* Descendant selector */
+.expenses-section td {
+    padding: 12px;
+    border: 1px solid #ccc;
+}
+
+/* Table headers */
+th {
+    background-color: #007bff;
+    color: white;
+    padding: 12px;
+    border: 1px solid #ccc;
+}
+
+/* Alternating table rows */
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* First row selector */
+tr:first-child {
+    border-top: 2px solid #007bff;
+}
+
+/* Hover effect on table rows */
+tbody tr:hover {
+    background-color: #e8f0fe;
+}
+
+/* Details */
+summary {
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* Video */
+.video-section {
+    text-align: center;
+}
+
+iframe {
+    max-width: 100%;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    margin-top: 30px;
+}
+
+
+
+/* ==============================
+   BUDGET TRACKER - WEEK 3
+   Visual Identity
+   ============================== */
+
+
+/* ---------- Color Palette ---------- */
+
+:root {
+    --primary: #2563eb;
+    --primary-dark: #1d4ed8;
+    --secondary: #0f766e;
+    --background: #f1f5f9;
+    --card: #ffffff;
+    --text: #1e293b;
+    --muted: #64748b;
+    --border: #cbd5e1;
+    --table-row: #f8fafc;
+    --hover: #dbeafe;
+}
+
+
+/* ---------- General Page ---------- */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 30px;
+
+    background-color: var(--background);
+    color: var(--text);
+
+    font-family: "Open Sans", sans-serif;
+
+    line-height: 1.6;
+}
+
+
+/* ---------- Headings ---------- */
+
+h1,
+h2 {
+    font-family: "Montserrat", sans-serif;
+}
+
+h1 {
+    color: var(--primary);
+    font-size: 36px;
+    margin-bottom: 8px;
+}
+
+h2 {
+    color: var(--secondary);
+    margin-top: 0;
+}
+
+
+/* ---------- Header Card ---------- */
+
+header {
+    max-width: 900px;
+    margin: 0 auto 25px auto;
+
+    padding: 30px;
+
+    background-color: var(--card);
+
+    border: 1px solid var(--border);
+    border-radius: 12px;
+
+    text-align: center;
+
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+header img {
+    display: block;
+    margin: 0 auto 15px auto;
+}
+
+header p {
+    color: var(--muted);
+}
+
+
+/* ---------- Main Sections / Cards ---------- */
+
+.add-expense-section,
+.expenses-section,
+.help-section,
+.video-section {
+    max-width: 900px;
+
+    margin: 25px auto;
+
+    padding: 25px;
+
+    background-color: var(--card);
+
+    border: 1px solid var(--border);
+    border-radius: 12px;
+
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.06);
+}
+
+
+/* ---------- Form ---------- */
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+label {
+    font-weight: 600;
+    margin-top: 8px;
+}
+
+
+/* ---------- Inputs ---------- */
+
+input,
+select {
+    width: 100%;
+
+    padding: 12px;
+
+    font-family: "Open Sans", sans-serif;
+    font-size: 15px;
+
+    color: var(--text);
+    background-color: white;
+
+    border: 1px solid var(--border);
+    border-radius: 7px;
+
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+
+/* Focus effect */
+
+input:focus,
+select:focus {
+    outline: none;
+
+    border-color: var(--primary);
+
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.15);
+}
+
+
+/* ---------- Button ---------- */
+
+button {
+    margin-top: 15px;
+
+    padding: 12px 20px;
+
+    background-color: var(--primary);
+    color: white;
+
+    border: none;
+    border-radius: 7px;
+
+    font-family: "Open Sans", sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: background-color 0.2s, transform 0.2s;
+}
+
+button:hover {
+    background-color: var(--primary-dark);
+    transform: translateY(-1px);
+}
+
+
+/* ---------- Expense Table ---------- */
+
+table {
+    width: 100%;
+
+    border-collapse: collapse;
+
+    margin-top: 15px;
+
+    border: 1px solid var(--border);
+}
+
+
+/* Table header */
+
+th {
+    padding: 14px;
+
+    background-color: var(--primary);
+    color: white;
+
+    border: 1px solid var(--primary-dark);
+
+    font-family: "Montserrat", sans-serif;
+    text-align: left;
+}
+
+
+/* Table cells */
+
+td {
+    padding: 13px;
+
+    border: 1px solid var(--border);
+
+    font-size: 14px;
+}
+
+
+/* Alternating rows */
+
+tbody tr:nth-child(even) {
+    background-color: var(--table-row);
+}
+
+tbody tr:nth-child(odd) {
+    background-color: white;
+}
+
+
+/* Row hover */
+
+tbody tr:hover {
+    background-color: var(--hover);
+}
+
+
+/* ---------- Details Section ---------- */
+
+details {
+    border: 1px solid var(--border);
+    border-radius: 8px;
+
+    padding: 15px;
+
+    background-color: #f8fafc;
+}
+
+summary {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    color: var(--primary);
+
+    cursor: pointer;
+}
+
+
+/* ---------- Video ---------- */
+
+.video-section {
+    text-align: center;
+}
+
+iframe {
+    max-width: 100%;
+
+    border-radius: 8px;
+
+    border: 1px solid var(--border);
+}
+
+
+/* ---------- Footer ---------- */
+
+footer {
+    max-width: 900px;
+
+    margin: 30px auto 0 auto;
+
+    padding: 20px;
+
+    text-align: center;
+
+    color: var(--muted);
+}
+
+
+/* ---------- Mobile Responsive Design ---------- */
+
+@media (max-width: 600px) {
+
+    body {
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    .add-expense-section,
+    .expenses-section,
+    .help-section,
+    .video-section,
+    header {
+        padding: 18px;
+    }
+
+    table {
+        font-size: 13px;
+    }
+
+    th,
+    td {
+        padding: 9px;
+    }
+}
